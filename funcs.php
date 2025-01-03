@@ -11,10 +11,10 @@ function
 db_conn() 
 {
     try {
-        $db_name = 'kadai_php03'; //データベース名
-        $db_id   = 'root'; //アカウント名
-        $db_pw   = ''; //パスワード：MAMPは'root'
-        $db_host = 'localhost'; //DBホスト
+        $db_name = 'silverbat3_kadai_php03'; //データベース名
+        $db_id   = 'silverbat3_kadai_php03'; //アカウント名
+        $db_pw   = ''; //パスワード
+        $db_host = 'mysql3104.db.sakura.ne.jp'; //DBホスト
         
         $pdo = new PDO('mysql:dbname=' . $db_name . ';charset=utf8;host=' . $db_host, $db_id, $db_pw);
         return $pdo; //関数の外でも使えるようにreturn
